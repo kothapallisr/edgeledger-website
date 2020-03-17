@@ -65,7 +65,7 @@ body {
 }
 #page-1 p {
   transform: translateX(-1800px);
-  animation: heading var(--animate-speed) forwards ease-in 2s;
+  animation: heading var(--animate-speed) forwards ease-in 1s;
 }
 /* Keyframes */
 @keyframes heading {
