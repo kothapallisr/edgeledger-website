@@ -83,11 +83,12 @@ var view = {
       var todo = todoList.todos[i];
       var todoTextWithCompletion = '';
       if(todo.completed === true) {
-        todoTextWithCompletion = '(X) ' + todo.todoText;
+        todoTextWithCompletion = '(X) ' + todo.todoText +' ';
       } else {
-        todoTextWithCompletion = '( ) ' + todo.todoText;
+        todoTextWithCompletion = '( ) ' + todo.todoText + ' ';
       }
       todoLi.textContent = todoTextWithCompletion;
+      todoLi.appendChild(this.createDeleteButton());
       todosUl.appendChild(todoLi);
     }
   },
