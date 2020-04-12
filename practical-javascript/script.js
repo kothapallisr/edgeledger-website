@@ -91,6 +91,7 @@ var view = {
         todosUl.appendChild(todoLi);
     },this);
   },
+  // Create delete button
   createDeleteButton: function() {
     var deleteButton;
     deleteButton = document.createElement('button');
@@ -98,6 +99,7 @@ var view = {
     deleteButton.className = 'deleteButton';
     return deleteButton;
   },
+  // Add list of items 
   setUpEventListeners: function() {
     var todosUl = document.querySelector('ul');
     todosUl.addEventListener('click',function() {  
